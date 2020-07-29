@@ -104,23 +104,102 @@ figure::after {
   list-style-type: none;
 }
 
+.icons li a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.team-detail:hover .icons li a {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .team-detail:hover .icons li:nth-child(1) a {
-  -webkit-transition-delay: 0.13s;
-          transition-delay: 0.13s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 .team-detail:hover .icons li:nth-child(2) a {
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .team-detail:hover .icons li:nth-child(3) a {
-  -webkit-transition-delay: 0.17s;
-          transition-delay: 0.17s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.team-detail:hover .icons li:nth-child(4) a {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.team-detail:hover .icons li:nth-child(5) a {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.team-detail:hover .icons li:nth-child(6) a {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.team-detail:hover .icons li:nth-child(7) a {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.team-detail:hover .icons li:nth-child(8) a {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.team-detail:hover .icons li:nth-child(9) a {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+
+.team-detail:hover .icons li:nth-child(10) a {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.team-name {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .team-detail:hover .team-name {
-  bottom: 30px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.team-title {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.team-detail:hover .team-title {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .fa.fa-facebook,

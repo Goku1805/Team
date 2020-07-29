@@ -80,20 +80,44 @@ figure::after {
   //display: block;
   list-style-type: none;
 }
-.team-detail:hover .icons li:nth-child(1) a {
-  transition-delay: 0.13s;
+.icons li a {
+  transition: all 0.3s ease;
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
 }
-.team-detail:hover .icons li:nth-child(2) a {
-  transition-delay: 0.15s;
+.team-detail:hover .icons li a {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
-.team-detail:hover .icons li:nth-child(3) a {
-  transition-delay: 0.17s;
+@for $i from 1 through 10 {
+  .team-detail:hover .icons li:nth-child(#{$i}) a {
+    transition-delay: #{$i * 0.1}s;
+  }
 }
-
+.team-name {
+  transition: all 0.3s ease;
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+}
 .team-detail:hover .team-name {
-  bottom: 30px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
-
+.team-title {
+  transition: all 0.3s ease;
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+}
+.team-detail:hover .team-title {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 .fa.fa-facebook,
 .fa.fa-twitter,
 .fa.fa-instagram {
