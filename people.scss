@@ -88,13 +88,13 @@ figure::after {
   display: inline-block;
   transition: all 0.3s ease;
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(30px);
   visibility: hidden;
 }
 .team-detail:hover .icons li a {
   opacity: 1;
   visibility: visible;
-  transform: translateY(20px);
+  transform: translateY(0px);
 }
 @for $i from 1 through 10 {
   .team-detail:hover .icons li:nth-child(#{$i}) a {

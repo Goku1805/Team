@@ -114,16 +114,16 @@ figure::after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
   visibility: hidden;
 }
 
 .team-detail:hover .icons li a {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .team-detail:hover .icons li:nth-child(1) a {
