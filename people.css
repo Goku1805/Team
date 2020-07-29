@@ -42,6 +42,11 @@ figure {
           transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+.team-detail:hover .side-name {
+  opacity: 0;
+  bottom: 30px;
+}
+
 figure img {
   width: 100%;
 }
@@ -105,19 +110,20 @@ figure::after {
 }
 
 .icons li a {
+  display: inline-block;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
   opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
   visibility: hidden;
 }
 
 .team-detail:hover .icons li a {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
 }
 
 .team-detail:hover .icons li:nth-child(1) a {
@@ -173,8 +179,8 @@ figure::after {
 .team-name {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
   opacity: 0;
   visibility: hidden;
 }
@@ -187,8 +193,8 @@ figure::after {
 }
 
 .team-title {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
@@ -231,11 +237,6 @@ figure::after {
   opacity: 1;
   visibility: visible;
   z-index: 1;
-}
-
-.team-detail:hover .side-name {
-  opacity: 0;
-  bottom: 30px;
 }
 
 @media (min-width: 0) {
